@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="containerTitulo">
+        <h1>Cadastro de Cliente</h1>
+    </div>
+
+    <form id="clienteForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" required>
+
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" name="numero" required>
+
+        <button class="btn-blue" type="button" onclick="adicionarCliente()">Adicionar Cliente</button>
+        <button class="btn-green" type="button" onclick="listarClientes()">Listar Clientes</button>
+    </form>
+
+    <div class="table-container">
+        <table class="info-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data de Nascimento</th>
+                    <th>CEP</th>
+                    <th>Endereço</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João Silva</td>
+                    <td>10/05/1990</td>
+                    <td>12345-678</td>
+                    <td>Rua Exemplo, 123</td>
+                    <td>
+                        <button class="edit-btn">Editar</button>
+                        <button class="delete-btn">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function adicionarCliente() {
+            // Lógica para adicionar cliente
+            alert('Cliente adicionado com sucesso!');
+        }
+
+        function listarClientes() {
+            // Lógica para listar clientes
+            alert('Listar clientes...');
+        }
+    </script>
+
+</body>
+
+</html>

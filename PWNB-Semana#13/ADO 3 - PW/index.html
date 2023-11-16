@@ -10,8 +10,9 @@
 </head>
 
 <body>
-
-    <h1>Cadastro de Cliente</h1>
+    <div class="containerTitulo">
+        <h1>Cadastro de Cliente</h1>
+    </div>
 
     <form id="clienteForm">
         <label for="nome">Nome:</label>
@@ -35,6 +36,32 @@
         <button class="btn-blue" type="button" onclick="adicionarCliente()">Adicionar Cliente</button>
         <button class="btn-green" type="button" onclick="listarClientes()">Listar Clientes</button>
     </form>
+
+    <div class="table-container">
+        <table class="info-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data de Nascimento</th>
+                    <th>CEP</th>
+                    <th>Endereço</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João Silva</td>
+                    <td>10/05/1990</td>
+                    <td>12345-678</td>
+                    <td>Rua Exemplo, 123</td>
+                    <td>
+                        <button class="edit-btn">Editar</button>
+                        <button class="delete-btn">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <script>
         function adicionarCliente() {

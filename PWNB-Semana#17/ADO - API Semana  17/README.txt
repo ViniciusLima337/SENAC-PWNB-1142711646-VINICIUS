@@ -1,0 +1,1 @@
+Não consegui realizar a atividade devido ao não entendimento do conteudo e tempo estimado para entrega.
